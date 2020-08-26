@@ -1,0 +1,29 @@
+import pickle
+
+#Pickeling a Python Object
+cars = ['Audi','BMW','Maruti Suzuki','Harryti Tuzuki']
+file = "mycar.pkl"
+fileobj = open(file,'wb')
+pickle.dump(cars,fileobj)
+fileobj.close()
+
+file = "mycar.pkl"
+fileobj = open(file,'rb')
+mycar = pickle.load(fileobj)
+print(mycar)
+print(type(mycar))
+
+# bikes = ['Splendor','Cd Deluxe','Hf Deluxe','Pulsar','Apache','Avenger']
+# file = "mybike.pkl"
+# fileobj = open(file,'wb')
+# pickle.dump(bikes,fileobj)
+# fileobj.close()
+
+
+
+# file = 'mybike.pkl'
+# fileobj = open(file,'rb')
+# mybikes = pickle.load(fileobj)
+# print(mybikes)
+
+
